@@ -1,202 +1,1953 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Premium Graphic Design</title>
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@charset "utf-8";
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+@font-face { font-family: "DM Sans"; font-style: italic; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2rp2ywxg089UriCZaSExd86J3t9jz86Mvy4qCRAL19DksVat-JDV36TGcrpdo4zzw.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: #0f0c29;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-      color: #fff;
-    }
+@font-face { font-family: "DM Sans"; font-style: italic; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2rp2ywxg089UriCZaSExd86J3t9jz86Mvy4qCRAL19DksVat-JDV30TGcrpdo4.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-    header {
-      padding: 60px 20px;
-      text-align: center;
-    }
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6z9mXgjU0.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
-    header h1 {
-      font-size: 2.6rem;
-      margin-bottom: 15px;
-    }
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-    header p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: auto;
-      opacity: 0.9;
-    }
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6z9mXgjU0.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 35px;
-      background: #ff2e63;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 40px;
-      font-weight: bold;
-      font-size: 1.05rem;
-    }
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-    .btn:hover {
-      background: #ff4f7b;
-    }
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6z9mXgjU0.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
-    section {
-      padding: 50px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-    .images {
-      display: flex;
-      gap: 25px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6z9mXgjU0.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
-    .images img {
-      width: 100%;
-      max-width: 420px;
-      border-radius: 18px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
-    }
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-    .images img:hover {
-      transform: scale(1.05);
-    }
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnohkk7yRZrPJ-M.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
 
-    .services {
-      margin-top: 60px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojUk7yRZrPJ-M.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
 
-    .card {
-      background: rgba(255,255,255,0.08);
-      padding: 25px;
-      border-radius: 16px;
-      text-align: center;
-      backdrop-filter: blur(10px);
-    }
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojEk7yRZrPJ-M.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
-    .card h3 {
-      margin-bottom: 10px;
-      color: #ff2e63;
-    }
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7yRZrPA.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-    .cta {
-      text-align: center;
-      margin-top: 70px;
-      background: linear-gradient(135deg, #ff2e63, #ff8c00);
-      padding: 50px 20px;
-      border-radius: 25px;
-      color: #fff;
-    }
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnohkk7yRZrPJ-M.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
 
-    .cta h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojUk7yRZrPJ-M.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
 
-    .cta p {
-      max-width: 600px;
-      margin: auto;
-      font-size: 1.05rem;
-    }
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojEk7yRZrPJ-M.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
-    .whatsapp {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 15px 40px;
-      background: #25D366;
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.1rem;
-      border-radius: 50px;
-      font-weight: bold;
-    }
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7yRZrPA.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-    .whatsapp:hover {
-      background: #1ebe5d;
-    }
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnohkk7yRZrPJ-M.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
 
-    footer {
-      text-align: center;
-      padding: 30px 10px;
-      opacity: 0.7;
-      font-size: 0.9rem;
-    }
-  </style>
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojUk7yRZrPJ-M.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnojEk7yRZrPJ-M.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7yRZrPA.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@charset "utf-8";
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+html { scroll-behavior: smooth; }
+
+body { font-family: "DM Sans", sans-serif; background: rgb(245, 239, 230); color: rgb(59, 31, 14); -webkit-font-smoothing: antialiased; }
+
+a { text-decoration: none; color: inherit; }
+
+img { display: block; max-width: 100%; }
+
+:root { --brown: #3B1F0E; --cream: #F5EFE6; --black: #0A0A0A; --gold: #C9A96E; --brown2: #1a0f06; --radius: 16px; }
+
+.container { max-width: 1280px; margin: 0px auto; padding: 0px 24px; }
+
+.font-heading { font-family: "Playfair Display", serif; }
+
+.grain::after { content: ""; position: absolute; inset: 0px; pointer-events: none; opacity: 0.04; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 128px 128px; }
+
+@keyframes shimmer { 
+  0% { background-position: -200% 0px; }
+  100% { background-position: 200% 0px; }
+}
+
+.shimmer { background: linear-gradient(90deg, rgba(201, 169, 110, 0.04) 0%, rgba(201, 169, 110, 0.14) 50%, rgba(201, 169, 110, 0.04) 100%) 0% 0% / 200% 100%; animation: 3s ease-in-out 0s infinite normal none running shimmer; }
+
+@keyframes pulseGlow { 
+  0%, 100% { box-shadow: rgba(201, 169, 110, 0.3) 0px 0px 20px; }
+  50% { box-shadow: rgba(201, 169, 110, 0.65) 0px 0px 44px; }
+}
+
+.pulse-glow { animation: 2.5s ease-in-out 0s infinite normal none running pulseGlow; }
+
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.75s, transform 0.75s; }
+
+.reveal.visible { opacity: 1; transform: translateY(0px); }
+
+@keyframes dotPulse { 
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.dot-pulse { animation: 1.6s ease-in-out 0s infinite normal none running dotPulse; }
+
+@keyframes marquee { 
+  0% { transform: translateX(0px); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track { display: flex; width: max-content; animation: 28s linear 0s infinite normal none running marquee; }
+
+.marquee-track:hover { animation-play-state: paused; }
+
+nav { position: fixed; top: 0px; left: 0px; right: 0px; z-index: 100; padding: 20px 0px; transition: background 0.45s, padding 0.45s, backdrop-filter 0.45s; }
+
+nav.scrolled { padding: 12px 0px; background: rgba(10, 10, 10, 0.88); backdrop-filter: blur(20px); box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 40px; }
+
+.nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1280px; margin: 0px auto; padding: 0px 24px; }
+
+.nav-logo { font-family: "Playfair Display", serif; font-size: 1.35rem; font-weight: 700; color: rgb(245, 239, 230); letter-spacing: 0.04em; }
+
+.nav-logo span { color: rgb(201, 169, 110); }
+
+.nav-links { display: flex; align-items: center; gap: 32px; }
+
+.nav-links a { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245, 239, 230, 0.65); transition: color 0.25s; }
+
+.nav-links a:hover { color: rgb(201, 169, 110); }
+
+.nav-cta { display: flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 14px; background: rgba(201, 169, 110, 0.12); border: 1px solid rgba(201, 169, 110, 0.28); font-size: 0.78rem; font-weight: 500; color: rgb(201, 169, 110) !important; transition: background 0.25s, transform 0.25s !important; text-transform: none !important; letter-spacing: 0.04em !important; }
+
+.nav-cta:hover { transform: scale(1.04); background: rgba(201, 169, 110, 0.22) !important; }
+
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; }
+
+.hamburger span { display: block; width: 22px; height: 2px; background: rgb(245, 239, 230); border-radius: 2px; transition: 0.3s; }
+
+.mobile-menu { display: none; flex-direction: column; gap: 16px; padding: 16px 24px 20px; background: rgba(10, 10, 10, 0.95); backdrop-filter: blur(20px); border-top: 1px solid rgba(201, 169, 110, 0.1); }
+
+.mobile-menu a { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(245, 239, 230, 0.65); transition: color 0.2s; }
+
+.mobile-menu a:hover { color: rgb(201, 169, 110); }
+
+.mobile-menu .nav-cta { justify-content: center; text-transform: none !important; }
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .mobile-menu.open { display: flex; }
+}
+
+#hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
+
+.hero-bg { position: absolute; inset: 0px; background-image: url("data:image/webp;base64,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"); background-size: cover; background-position: center center; }
+
+.hero-overlay { position: absolute; inset: 0px; background: linear-gradient(135deg, rgba(10, 10, 10, 0.86) 0%, rgba(59, 31, 14, 0.52) 50%, rgba(10, 10, 10, 0.82) 100%); }
+
+.hero-glow { position: absolute; top: 30%; left: 20%; width: 600px; height: 600px; background: rgba(201, 169, 110, 0.07); border-radius: 50%; filter: blur(90px); pointer-events: none; }
+
+.hero-content { position: relative; z-index: 2; max-width: 1280px; margin: 0px auto; padding: 120px 24px 80px; width: 100%; }
+
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 999px; background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.24); margin-bottom: 28px; }
+
+.hero-badge span { width: 8px; height: 8px; border-radius: 50%; background: rgb(201, 169, 110); }
+
+.hero-badge p { font-size: 0.7rem; font-weight: 500; color: rgb(201, 169, 110); letter-spacing: 0.2em; text-transform: uppercase; }
+
+.hero-h1 { font-family: "Playfair Display", serif; font-size: clamp(2.8rem, 7vw, 5.2rem); font-weight: 800; line-height: 1.04; color: #fff; letter-spacing: -0.02em; margin-bottom: 20px; max-width: 720px; }
+.hero-h1 em { color: rgb(201, 169, 110); font-style: italic; }
+.h1-gradient {
+  background: linear-gradient(135deg, #f5c842 0%, #e8973a 40%, #c96a18 80%, #ff9a50 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 30px rgba(232,151,58,0.4));
+}
+
+.hero-sub { font-size: 1.05rem; color: rgba(245, 239, 230, 0.55); max-width: 480px; line-height: 1.7; margin-bottom: 40px; }
+
+.hero-btns { display: flex; flex-wrap: wrap; gap: 14px; }
+
+.btn-gold { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; border-radius: 16px; background: rgb(201, 169, 110); color: rgb(10, 10, 10); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; transition: transform 0.3s, box-shadow 0.3s; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; cursor: pointer; }
+
+.btn-gold:hover { transform: scale(1.05); box-shadow: rgba(201, 169, 110, 0.28) 0px 16px 40px; }
+
+.btn-outline { display: inline-flex; align-items: center; gap: 8px; padding: 16px 32px; border-radius: 16px; border: 1px solid rgba(245, 239, 230, 0.15); color: rgba(245, 239, 230, 0.75); font-size: 0.85rem; backdrop-filter: blur(8px); transition: border-color 0.3s, color 0.3s; cursor: pointer; background: transparent; }
+
+.btn-outline:hover { border-color: rgba(201, 169, 110, 0.4); color: rgb(201, 169, 110); }
+
+.hero-scroll { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 6px; }
+
+.hero-scroll p { font-size: 0.65rem; color: rgba(245, 239, 230, 0.28); letter-spacing: 0.2em; text-transform: uppercase; }
+
+.hero-scroll-line { width: 1px; height: 36px; background: linear-gradient(rgba(201, 169, 110, 0.4), transparent); }
+
+#about { position: relative; background: rgb(245, 239, 230); padding: 100px 24px; }
+
+.about-inner { max-width: 800px; margin: 0px auto; text-align: center; }
+
+.gold-divider { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 32px 0px; }
+
+.gold-divider-line { height: 1px; background: rgba(201, 169, 110, 0.4); flex: 1 1 0%; max-width: 60px; }
+
+.gold-divider-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(201, 169, 110, 0.55); }
+
+.about-text { font-family: "Playfair Display", serif; font-size: clamp(1.4rem, 3.5vw, 2.2rem); font-weight: 500; line-height: 1.55; color: rgb(59, 31, 14); }
+
+.about-text em { color: rgb(201, 169, 110); }
+
+#services { position: relative; background: rgb(245, 239, 230); padding: 80px 0px 100px; border-top: 1px solid rgba(201, 169, 110, 0.12); }
+
+.section-label { display: block; text-align: center; font-size: 0.7rem; font-weight: 500; color: rgb(201, 169, 110); letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 12px; }
+
+.section-h2 { font-family: "Playfair Display", serif; font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 700; text-align: center; color: rgb(59, 31, 14); margin-bottom: 56px; }
+
+.section-h2 em { color: rgb(201, 169, 110); font-style: italic; }
+
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .services-grid { grid-template-columns: 1fr; }
+}
+
+.service-card { background: rgba(255, 255, 255, 0.55); backdrop-filter: blur(12px); border: 1px solid rgba(201, 169, 110, 0.1); border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 16px; transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s, background 0.4s; }
+
+.service-card:hover { transform: translateY(-6px); box-shadow: rgba(59, 31, 14, 0.08) 0px 20px 60px; border-color: rgba(201, 169, 110, 0.25); background: rgba(255, 255, 255, 0.75); }
+
+.service-top { display: flex; align-items: flex-start; gap: 14px; }
+
+.service-icon { width: 46px; height: 46px; border-radius: 12px; background: rgba(59, 31, 14, 0.06); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: rgb(59, 31, 14); transition: background 0.3s, color 0.3s; }
+
+.service-card:hover .service-icon { background: rgba(201, 169, 110, 0.12); color: rgb(201, 169, 110); }
+
+.service-icon svg { width: 22px; height: 22px; stroke-width: 1.5; }
+
+.service-name { font-family: "Playfair Display", serif; font-size: 1rem; font-weight: 600; color: rgb(59, 31, 14); margin-bottom: 4px; }
+
+.service-desc { font-size: 0.78rem; color: rgba(59, 31, 14, 0.55); line-height: 1.6; }
+
+.service-images { display: flex; gap: 10px; }
+
+.img-slot { flex: 1 1 0%; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; border: 1px solid rgba(201, 169, 110, 0.14); background: linear-gradient(135deg, rgba(59, 31, 14, 0.06), rgba(201, 169, 110, 0.04)); position: relative; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: border-color 0.3s; }
+
+.img-slot:hover { border-color: rgba(201, 169, 110, 0.35); }
+
+.img-slot-grid { position: absolute; inset: 0px; opacity: 0.06; background-image: linear-gradient(rgb(201, 169, 110) 1px, transparent 1px), linear-gradient(90deg, rgb(201, 169, 110) 1px, transparent 1px); background-size: 18px 18px; }
+
+.img-slot-inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+
+.img-slot-icon { width: 30px; height: 30px; border-radius: 8px; border: 1px solid rgba(201, 169, 110, 0.28); display: flex; align-items: center; justify-content: center; }
+
+.img-slot-icon svg { width: 14px; height: 14px; stroke: rgba(201, 169, 110, 0.5); stroke-width: 1.5; fill: none; }
+
+.img-slot-label { font-family: "Playfair Display", serif; font-size: 0.65rem; font-style: italic; color: rgba(201, 169, 110, 0.5); }
+
+.img-slot-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 12px; display: block; z-index: 2; }
+.img-slot-img[src=""] { display: none; }
+.img-slot:has(.img-slot-img[src]:not([src=""])) .img-slot-inner { display: none; }
+.img-slot:has(.img-slot-img[src]:not([src=""])) .img-slot-grid { display: none; }
+.img-slot:has(.img-slot-img[src]:not([src=""])) { background: none; }
+
+.service-btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px; border-radius: 12px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; cursor: pointer; background: rgb(59, 31, 14); color: rgb(245, 239, 230); font-family: "DM Sans", sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em; transition: background 0.3s, color 0.3s, transform 0.25s, box-shadow 0.3s; }
+
+.service-btn:hover { background: rgb(201, 169, 110); color: rgb(10, 10, 10); transform: scale(1.02); box-shadow: rgba(201, 169, 110, 0.22) 0px 8px 24px; }
+
+.service-btn svg { width: 15px; height: 15px; }
+
+#portfolio { position: relative; background: rgb(10, 10, 10); padding: 100px 0px; overflow: hidden; }
+
+#portfolio::after { content: ""; position: absolute; inset: 0px; pointer-events: none; opacity: 0.04; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 128px 128px; }
+
+.portfolio-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; background: rgba(59, 31, 14, 0.12); border-radius: 50%; filter: blur(90px); pointer-events: none; }
+
+.portfolio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; position: relative; z-index: 1; }
+
+@media (max-width: 640px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+}
+
+.portfolio-card { position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 4 / 3; cursor: pointer; }
+
+.portfolio-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s; }
+
+.portfolio-card:hover img { transform: scale(1.1); }
+
+.portfolio-overlay { position: absolute; inset: 0px; background: rgba(59, 31, 14, 0); transition: background 0.5s; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+.portfolio-card:hover .portfolio-overlay { background: rgba(59, 31, 14, 0.6); }
+
+.portfolio-overlay-text { opacity: 0; transition: opacity 0.4s; text-align: center; }
+
+.portfolio-card:hover .portfolio-overlay-text { opacity: 1; }
+
+.portfolio-overlay-text h3 { font-family: "Playfair Display", serif; font-size: 1.6rem; font-weight: 700; color: rgb(245, 239, 230); }
+
+.portfolio-overlay-text p { font-size: 0.8rem; color: rgb(201, 169, 110); margin-top: 6px; }
+
+.portfolio-tag { position: absolute; top: 16px; left: 16px; padding: 6px 14px; border-radius: 999px; background: rgba(10, 10, 10, 0.5); backdrop-filter: blur(12px); border: 1px solid rgba(201, 169, 110, 0.2); font-size: 0.7rem; color: rgb(201, 169, 110); letter-spacing: 0.06em; }
+
+#reviews { background: rgb(245, 239, 230); padding: 100px 0px; overflow: hidden; }
+
+.reviews-marquee { overflow: hidden; }
+
+.review-card { flex-shrink: 0; width: 320px; margin-right: 20px; padding: 28px 26px; border-radius: 20px; background: rgb(255, 255, 255); border: 1px solid rgba(201, 169, 110, 0.12); box-shadow: rgba(59, 31, 14, 0.04) 0px 4px 24px; }
+
+.review-stars { display: flex; gap: 4px; margin-bottom: 14px; }
+
+.review-stars svg { width: 14px; height: 14px; fill: rgb(201, 169, 110); }
+
+.review-text { font-family: "Playfair Display", serif; font-size: 0.95rem; line-height: 1.65; color: rgb(59, 31, 14); font-style: italic; margin-bottom: 18px; }
+
+.review-author { display: flex; align-items: center; gap: 12px; }
+
+.review-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, rgb(59, 31, 14), rgb(201, 169, 110)); display: flex; align-items: center; justify-content: center; font-family: "Playfair Display", serif; font-size: 0.95rem; font-weight: 700; color: rgb(245, 239, 230); }
+
+.review-name { font-size: 0.82rem; font-weight: 600; color: rgb(59, 31, 14); }
+
+.review-role { font-size: 0.7rem; color: rgba(59, 31, 14, 0.45); margin-top: 2px; }
+
+.reviews-badge { align-items: center; gap: 8px; padding: 8px 16px; border-radius: 999px; background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.22); margin: 0px auto 12px; display: flex; width: fit-content; }
+
+.reviews-badge p { font-size: 0.7rem; color: rgb(201, 169, 110); letter-spacing: 0.15em; text-transform: uppercase; }
+
+footer { background: rgb(245, 239, 230); }
+
+.footer-cta-wrap { padding: 32px 24px 0px; }
+
+.footer-cta { position: relative; border-radius: 28px; overflow: hidden; padding: 88px 24px; text-align: center; }
+
+.footer-cta-bg { position: absolute; inset: 0px; background-image: url("data:image/webp;base64,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"); background-size: cover; background-position: center center; }
+
+.footer-cta-overlay { position: absolute; inset: 0px; background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.88)); }
+
+.footer-cta-content { position: relative; z-index: 1; }
+
+.footer-cta h2 { font-family: "Playfair Display", serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; color: rgb(245, 239, 230); margin-bottom: 14px; line-height: 1.2; }
+
+.footer-cta h2 em { color: rgb(201, 169, 110); font-style: italic; }
+
+.footer-cta p { font-size: 0.9rem; color: rgba(245, 239, 230, 0.5); max-width: 400px; margin: 0px auto 28px; line-height: 1.65; }
+
+.footer-card-wrap { padding: 24px 24px 0px; }
+
+.footer-card { background: rgb(255, 255, 255); border: 1px solid rgba(201, 169, 110, 0.1); border-radius: 28px; padding: 40px 40px 24px; }
+
+@media (max-width: 640px) {
+  .footer-card { padding: 28px 20px 20px; }
+}
+
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 32px; border-bottom: 1px solid rgba(59, 31, 14, 0.07); margin-bottom: 24px; }
+
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+.footer-brand-name { font-family: "Playfair Display", serif; font-size: 1.15rem; font-weight: 700; color: rgb(59, 31, 14); margin-bottom: 10px; }
+
+.footer-brand-name span { color: rgb(201, 169, 110); }
+
+.footer-brand-desc { font-size: 0.75rem; color: rgba(59, 31, 14, 0.48); line-height: 1.7; max-width: 220px; margin-bottom: 18px; }
+
+.footer-socials { display: flex; gap: 10px; }
+
+.footer-social { width: 34px; height: 34px; border-radius: 10px; border: 1px solid rgba(59, 31, 14, 0.1); display: flex; align-items: center; justify-content: center; color: rgba(59, 31, 14, 0.45); transition: color 0.2s, border-color 0.2s, background 0.2s; }
+
+.footer-social:hover { color: rgb(201, 169, 110); border-color: rgba(201, 169, 110, 0.3); background: rgba(201, 169, 110, 0.05); }
+
+.footer-social svg { width: 15px; height: 15px; }
+
+.footer-col-title { font-size: 0.8rem; font-weight: 600; color: rgb(59, 31, 14); margin-bottom: 16px; }
+
+.footer-col-links { display: flex; flex-direction: column; gap: 10px; }
+
+.footer-col-links a { font-size: 0.75rem; color: rgba(59, 31, 14, 0.48); transition: color 0.2s; }
+
+.footer-col-links a:hover { color: rgb(201, 169, 110); }
+
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+.footer-copy { font-size: 0.72rem; color: rgba(59, 31, 14, 0.3); }
+
+.footer-legal { display: flex; gap: 20px; }
+
+.footer-legal a { font-size: 0.72rem; color: rgba(59, 31, 14, 0.3); transition: color 0.2s; }
+
+.footer-legal a:hover { color: rgb(201, 169, 110); }
+
+.footer-watermark { overflow: hidden; padding: 4px 8px 8px; pointer-events: none; user-select: none; }
+
+.footer-watermark p { font-family: "Playfair Display", serif; font-size: clamp(4rem, 12vw, 9rem); font-weight: 800; color: rgba(59, 31, 14, 0.05); text-align: center; white-space: nowrap; letter-spacing: -0.04em; line-height: 1; }
+
+.wa-icon { width: 18px; height: 18px; fill: currentcolor; }
+
+@media (max-width: 768px) {
+  .hero-content { padding: 110px 20px 70px; }
+  .hero-h1 { font-size: 2.6rem; }
+}
+
+/* ============ NAVBAR (Liquid Brokers style) ============ */
+#navbar {
+  position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+  width: calc(100% - 48px); max-width: 1100px;
+  background: rgba(15, 12, 22, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  z-index: 1000;
+  transition: all 0.4s ease;
+  padding: 0 24px;
+}
+#navbar.scrolled {
+  background: rgba(10, 8, 18, 0.85);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px; gap: 32px;
+}
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem; font-weight: 700;
+  color: #fff; text-decoration: none; white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+.nav-logo span { color: var(--gold); }
+.nav-links {
+  display: flex; align-items: center; gap: 28px;
+  flex: 1; justify-content: center;
+}
+.nav-links a {
+  color: rgba(255,255,255,0.7); text-decoration: none;
+  font-size: 0.82rem; font-weight: 400; letter-spacing: 0.01em;
+  transition: color 0.2s; display: flex; align-items: center; gap: 4px;
+}
+.nav-links a:hover { color: #fff; }
+.nav-right { display: flex; align-items: center; gap: 12px; }
+.nav-login {
+  color: rgba(255,255,255,0.7); text-decoration: none;
+  font-size: 0.82rem; font-weight: 400;
+  transition: color 0.2s; white-space: nowrap;
+}
+.nav-login:hover { color: #fff; }
+.nav-signup {
+  display: inline-flex; align-items: center;
+  padding: 8px 20px; border-radius: 999px;
+  background: #fff; color: #0a0a0a;
+  font-size: 0.82rem; font-weight: 600;
+  text-decoration: none; white-space: nowrap;
+  transition: background 0.2s, transform 0.2s;
+}
+.nav-signup:hover { background: #f0f0f0; transform: translateY(-1px); }
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  cursor: pointer; padding: 4px;
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: rgba(255,255,255,0.8); border-radius: 2px;
+  transition: all 0.3s;
+}
+.mobile-menu {
+  display: none; flex-direction: column; gap: 4px;
+  padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.07);
+}
+.mobile-menu.open { display: flex; }
+.mobile-link {
+  padding: 10px 4px; color: rgba(255,255,255,0.75);
+  text-decoration: none; font-size: 0.9rem;
+  border-radius: 8px; transition: color 0.2s;
+}
+.mobile-link:hover { color: #fff; }
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-right { display: none; }
+  .hamburger { display: flex; }
+  #navbar { top: 12px; width: calc(100% - 24px); }
+}
+
+/* ============ HERO (Liquid Brokers style) ============ */
+#hero {
+  position: relative; min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(120,60,10,0.35) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 70%, rgba(80,30,120,0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 10%, rgba(40,20,80,0.5) 0%, transparent 40%),
+    linear-gradient(160deg, #120c28 0%, #0d0818 40%, #080510 100%);
+  overflow: hidden; display: flex; align-items: center; justify-content: center;
+}
+#starfield {
+  position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0;
+}
+.hero-outer-glow {
+  position: absolute; width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(200,100,20,0.28) 0%, rgba(150,50,120,0.12) 50%, transparent 70%);
+  bottom: -100px; left: 50%; transform: translateX(-50%);
+  pointer-events: none; z-index: 1;
+}
+.hero-content {
+  position: relative; z-index: 5;
+  text-align: center; padding: 120px 24px 200px;
+  max-width: 680px;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 16px; border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 28px; font-size: 0.75rem;
+  color: rgba(255,255,255,0.6); letter-spacing: 0.04em;
+}
+.dot-pulse {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 0 0 rgba(74,222,128,0.6);
+  animation: pulse-dot 1.8s infinite;
+}
+@keyframes pulse-dot {
+  0%   { box-shadow: 0 0 0 0 rgba(74,222,128,0.6); }
+  70%  { box-shadow: 0 0 0 7px rgba(74,222,128,0); }
+  100% { box-shadow: 0 0 0 0 rgba(74,222,128,0); }
+}
+.hero-h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  font-weight: 800; line-height: 1.1;
+  color: #fff; letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+.hero-h1 span { color: #fff; }
+.hero-sub {
+  font-size: 0.88rem; color: rgba(220,200,180,0.65);
+  line-height: 1.7; max-width: 440px; margin: 0 auto 36px;
+}
+/* ---- 3D Book Button ---- */
+.hero-btns {
+  display: flex; align-items: center; justify-content: center;
+  gap: 16px; flex-wrap: wrap;
+}
+.btn-hero-book {
+  position: relative; display: inline-flex;
+  text-decoration: none; outline: none;
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease, filter 0.15s ease;
+  filter: drop-shadow(0 8px 24px rgba(201,151,58,0.45));
+}
+.btn-hero-book:hover {
+  transform: translateY(-3px) scale(1.03);
+  filter: drop-shadow(0 14px 32px rgba(201,151,58,0.65));
+}
+.btn-hero-book:active {
+  transform: translateY(2px) scale(0.98);
+  filter: drop-shadow(0 4px 12px rgba(201,151,58,0.3));
+}
+.btn-3d-top {
+  position: relative; z-index: 2;
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 15px 34px; border-radius: 14px;
+  background: linear-gradient(135deg, #e8a020 0%, #c97a10 40%, #a85c08 100%);
+  color: #fff; font-size: 0.9rem; font-weight: 700;
+  letter-spacing: 0.03em;
+  border-top: 1px solid rgba(255,220,120,0.5);
+  border-left: 1px solid rgba(255,200,80,0.3);
+  box-shadow:
+    inset 0 1px 0 rgba(255,230,130,0.4),
+    inset 0 -2px 0 rgba(0,0,0,0.2);
+  transition: background 0.15s;
+}
+.btn-hero-book:hover .btn-3d-top {
+  background: linear-gradient(135deg, #f0b030 0%, #d98820 40%, #b86c18 100%);
+}
+.btn-3d-shadow {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, #7a3e00, #5a2a00);
+  border-radius: 14px;
+  transform: translateY(5px) translateZ(-1px);
+  z-index: 1;
+}
+
+/* ---- View My Work Button ---- */
+.btn-hero-view {
+  display: inline-flex; align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.btn-hero-view:hover { transform: translateY(-2px); }
+.btn-view-inner {
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 15px 30px; border-radius: 14px;
+  border: 1.5px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  color: rgba(255,255,255,0.85); font-size: 0.9rem; font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+}
+.btn-hero-view:hover .btn-view-inner {
+  border-color: rgba(201,151,58,0.5);
+  color: #fff;
+  background: rgba(201,151,58,0.08);
+  box-shadow: 0 0 20px rgba(201,151,58,0.15), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+/* ---- Floating stat cards ---- */
+.hero-stat-card {
+  position: absolute; bottom: 120px; z-index: 6;
+  background: rgba(20,16,35,0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px; padding: 16px 20px; min-width: 180px;
+  animation: float-card 4s ease-in-out infinite;
+}
+.hero-stat-card.left { left: 5%; animation-delay: 0s; }
+.hero-stat-card.right { right: 5%; animation-delay: 1.5s; }
+@keyframes float-card {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.stat-card-top {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 10px;
+}
+.stat-label { font-size: 0.68rem; color: rgba(255,255,255,0.45); letter-spacing: 0.04em; }
+.stat-arrow {
+  width: 24px; height: 24px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.6);
+}
+.stat-card-main {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem; font-weight: 700; color: #fff;
+  line-height: 1.3; margin-bottom: 12px;
+}
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem; font-weight: 800; color: #fff;
+  margin-bottom: 10px;
+}
+.stat-bar-wrap {
+  height: 3px; background: rgba(255,255,255,0.1); border-radius: 99px; overflow: hidden;
+}
+.stat-bar {
+  height: 100%; width: 45%;
+  background: linear-gradient(90deg, var(--gold), #e8c070);
+  border-radius: 99px;
+}
+.stat-bar.full { width: 98%; }
+
+/* ---- 3D Blob ---- */
+.hero-blob-wrap {
+  position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%);
+  z-index: 3; width: 480px; height: 360px;
+  display: flex; align-items: flex-end; justify-content: center;
+}
+.hero-blob {
+  position: relative; width: 340px; height: 340px;
+}
+.blob-inner {
+  position: absolute; inset: 30px;
+  background: radial-gradient(ellipse at 35% 25%,
+    rgba(255,180,40,1) 0%,
+    rgba(220,120,20,0.95) 20%,
+    rgba(160,70,10,0.92) 45%,
+    rgba(80,20,60,0.9) 70%,
+    rgba(10,6,20,1) 100%
+  );
+  border-radius: 50% 45% 55% 40% / 45% 55% 40% 50%;
+  animation: morphblob 8s ease-in-out infinite;
+  box-shadow:
+    inset -20px -20px 60px rgba(0,0,0,0.5),
+    inset 10px 10px 40px rgba(255,180,40,0.4),
+    0 0 100px rgba(220,120,20,0.5),
+    0 0 200px rgba(180,60,120,0.2),
+    0 0 300px rgba(100,40,200,0.1);
+  filter: blur(0.5px);
+}
+@keyframes morphblob {
+  0%   { border-radius: 50% 45% 55% 40% / 45% 55% 40% 50%; transform: rotate(0deg) scale(1); }
+  25%  { border-radius: 55% 40% 50% 45% / 50% 40% 55% 45%; transform: rotate(3deg) scale(1.02); }
+  50%  { border-radius: 45% 55% 40% 52% / 55% 45% 50% 40%; transform: rotate(-2deg) scale(0.98); }
+  75%  { border-radius: 52% 48% 55% 42% / 42% 55% 45% 52%; transform: rotate(2deg) scale(1.01); }
+  100% { border-radius: 50% 45% 55% 40% / 45% 55% 40% 50%; transform: rotate(0deg) scale(1); }
+}
+.blob-ring {
+  position: absolute; inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(201,151,58,0.2);
+  animation: spinring 12s linear infinite;
+}
+.blob-ring.ring2 {
+  inset: -20px;
+  border-color: rgba(201,151,58,0.1);
+  animation-duration: 20s;
+  animation-direction: reverse;
+}
+@keyframes spinring {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.blob-glow {
+  position: absolute; inset: -20px;
+  background: radial-gradient(circle at 50% 60%,
+    rgba(180,100,10,0.3) 0%, transparent 65%);
+  border-radius: 50%;
+  animation: glowpulse 3s ease-in-out infinite;
+}
+@keyframes glowpulse {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+/* ---- Hero scroll indicator ---- */
+.hero-scroll {
+  position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  z-index: 10; opacity: 0.4;
+}
+.hero-scroll p { font-size: 0.65rem; letter-spacing: 0.18em; color: #fff; text-transform: uppercase; }
+.hero-scroll-line {
+  width: 1px; height: 36px;
+  background: linear-gradient(to bottom, #fff, transparent);
+  animation: scrollline 1.5s ease-in-out infinite;
+}
+@keyframes scrollline {
+  0%, 100% { opacity: 0.4; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.2); }
+}
+
+@media (max-width: 768px) {
+  .hero-stat-card { display: none; }
+  .hero-blob-wrap { width: 300px; height: 260px; bottom: -40px; }
+  .blob-inner { inset: 20px; }
+  .hero-content { padding: 100px 20px 180px; }
+  .hero-h1 { font-size: 2.2rem; }
+}
+
+
+/* ============ ABOUT UPGRADE ============ */
+#about {
+  background: linear-gradient(160deg, #fdf8f0 0%, #f5ede0 60%, #ede0cc 100%);
+  padding: 100px 24px; position: relative; overflow: hidden;
+}
+#about::before {
+  content: '';
+  position: absolute; top: -80px; right: -80px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(201,169,110,0.12) 0%, transparent 65%);
+  pointer-events: none;
+}
+.about-sub {
+  font-size: 0.95rem; color: rgba(59,31,14,0.5);
+  max-width: 520px; margin: 0 auto 48px;
+  line-height: 1.75; text-align: center;
+}
+.about-stats {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid rgba(201,169,110,0.15);
+  border-radius: 20px;
+  padding: 32px 48px;
+  max-width: 580px; margin: 0 auto;
+  box-shadow: 0 4px 40px rgba(59,31,14,0.06);
+}
+.about-stat {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 6px; flex: 1; min-width: 120px;
+}
+.about-stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem; font-weight: 800;
+  color: var(--brown);
+  background: linear-gradient(135deg, #c97a10, #e8a020);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.about-stat-label {
+  font-size: 0.72rem; color: rgba(59,31,14,0.45);
+  letter-spacing: 0.06em; text-transform: uppercase; text-align: center;
+}
+.about-stat-divider {
+  width: 1px; height: 40px;
+  background: rgba(201,169,110,0.2);
+  flex-shrink: 0;
+}
+@media (max-width: 480px) {
+  .about-stats { padding: 24px 20px; gap: 20px; }
+  .about-stat-divider { display: none; }
+}
+
+/* ============ SERVICES UPGRADE ============ */
+#services {
+  background: linear-gradient(180deg, #f5ede0 0%, #fdf8f0 100%);
+  padding: 90px 0 110px;
+  position: relative;
+}
+#services::before {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,169,110,0.3), transparent);
+}
+.service-card {
+  background: #fff !important;
+  border: 1px solid rgba(201,169,110,0.12) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 2px 20px rgba(59,31,14,0.04);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease !important;
+}
+.service-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 50px rgba(59,31,14,0.1), 0 0 0 1px rgba(201,169,110,0.2) !important;
+  border-color: rgba(201,169,110,0.35) !important;
+}
+.service-icon {
+  background: linear-gradient(135deg, rgba(201,169,110,0.15), rgba(139,69,19,0.08)) !important;
+  border: 1px solid rgba(201,169,110,0.2) !important;
+}
+.service-btn {
+  background: linear-gradient(135deg, #3B1F0E, #5c2e0a) !important;
+  color: #f5ede0 !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 4px 16px rgba(59,31,14,0.2) !important;
+}
+.service-btn:hover {
+  background: linear-gradient(135deg, #5c2e0a, #8b4513) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(59,31,14,0.3) !important;
+}
+
+/* ============ PORTFOLIO UPGRADE ============ */
+#portfolio {
+  background: linear-gradient(170deg, #0a0806 0%, #120a04 50%, #0a0806 100%) !important;
+  padding: 100px 0;
+}
+.port-placeholder {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.port-ph-1 {
+  background: linear-gradient(135deg, #1a0f06 0%, #3b1f0e 40%, #2a1200 70%, #0a0604 100%);
+}
+.port-ph-2 {
+  background: linear-gradient(135deg, #0a0812 0%, #1a0f2e 40%, #2a1040 70%, #0a0806 100%);
+}
+.port-ph-rings {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.phr1 {
+  position: absolute;
+  width: 200px; height: 200px; border-radius: 50%;
+  border: 1px solid rgba(201,169,110,0.12);
+  animation: portring 6s linear infinite;
+}
+.phr2 {
+  position: absolute;
+  width: 320px; height: 320px; border-radius: 50%;
+  border: 1px solid rgba(201,169,110,0.06);
+  animation: portring 10s linear infinite reverse;
+}
+@keyframes portring {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.port-ph-label {
+  position: relative; z-index: 2;
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  color: rgba(201,169,110,0.6); font-size: 0.78rem;
+  letter-spacing: 0.1em; text-transform: uppercase;
+}
+.portfolio-card {
+  border-radius: 20px !important;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.4) !important;
+  border: 1px solid rgba(201,169,110,0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease !important;
+}
+.portfolio-card:hover {
+  transform: translateY(-8px) scale(1.01) !important;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(201,169,110,0.2) !important;
+}
+
+/* ============ REVIEWS UPGRADE ============ */
+#reviews {
+  background: linear-gradient(160deg, #fdf8f0 0%, #f5ede0 100%) !important;
+}
+.review-card {
+  background: #fff !important;
+  border: 1px solid rgba(201,169,110,0.1) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 24px rgba(59,31,14,0.05) !important;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.review-card:hover {
+  box-shadow: 0 12px 40px rgba(59,31,14,0.1) !important;
+  transform: translateY(-3px);
+}
+
+/* ============ FOOTER CTA UPGRADE ============ */
+.footer-cta {
+  background: linear-gradient(135deg, #1a0f06 0%, #2a1200 50%, #1a0818 100%) !important;
+  border-radius: 28px !important;
+  border: 1px solid rgba(201,169,110,0.15);
+  box-shadow: 0 0 80px rgba(201,120,10,0.15), inset 0 1px 0 rgba(255,220,120,0.06) !important;
+}
+.footer-cta-bg {
+  background: none !important;
+}
+.footer-cta::before {
+  content: '';
+  position: absolute; top: -1px; left: 20%; right: 20%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,169,110,0.4), transparent);
+}
+
+/* ============ SECTION TRANSITIONS — alternating bg ============ */
+#about { border-top: none !important; }
+.section-h2 {
+  background: linear-gradient(135deg, #3B1F0E 0%, #8b4513 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.section-h2 em {
+  background: linear-gradient(135deg, #c97a10, #e8a020) !important;
+  -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+
+/* ============ CEO PHOTO ============ */
+.about-ceo {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 14px; margin-bottom: 40px;
+}
+.ceo-photo-wrap {
+  position: relative; width: 160px; height: 160px;
+  display: flex; align-items: center; justify-content: center;
+}
+.ceo-photo-ring {
+  position: absolute; border-radius: 50%;
+  border: 1.5px solid rgba(201,169,110,0.35);
+  animation: ceo-spin 12s linear infinite;
+}
+.ring-outer {
+  inset: -14px;
+  border-style: dashed;
+  border-color: rgba(201,169,110,0.2);
+  animation-duration: 18s;
+}
+.ring-inner {
+  inset: -6px;
+  border-color: rgba(201,169,110,0.4);
+  animation-direction: reverse;
+  animation-duration: 10s;
+}
+@keyframes ceo-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.ceo-avatar {
+  width: 160px; height: 160px; border-radius: 50%;
+  background: none;
+  border: 3px solid rgba(201,169,110,0.5);
+  box-shadow:
+    0 0 0 6px rgba(201,169,110,0.08),
+    0 12px 40px rgba(59,31,14,0.3);
+  overflow: hidden; position: relative;
+  display: block;
+}
+.ceo-avatar img,
+.ceo-photo {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 0;
+}
+.ceo-photo[src=""] { display: none; }
+.ceo-photo-hint {
+  font-size: 0.62rem; letter-spacing: 0.15em;
+  color: rgba(201,169,110,0.5); text-transform: uppercase;
+}
+.ceo-badge {
+  position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
+  background: linear-gradient(135deg, #c97a10, #e8a020);
+  color: #fff; font-size: 0.65rem; font-weight: 700;
+  padding: 4px 14px; border-radius: 999px;
+  letter-spacing: 0.08em; white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(201,120,10,0.4);
+}
+.ceo-name {
+  font-size: 1.6rem; font-weight: 800;
+  color: var(--brown); margin-top: 14px;
+  letter-spacing: -0.01em;
+}
+.ceo-title {
+  font-size: 0.8rem; font-weight: 600;
+  color: var(--gold); letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.ceo-tagline {
+  font-size: 0.75rem; color: rgba(59,31,14,0.4);
+  letter-spacing: 0.04em;
+}
+
+</style>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akin's Design — Premium Graphic Design Studio</title>
+  <meta name="description" content="Brand identity, print, and digital design crafted with intention. Book a service on WhatsApp.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+
+  
 </head>
 <body>
 
-  <header>
-    <h1>Designs That Make Your Brand Impossible to Ignore</h1>
-    <p>
-      We create bold, modern graphic designs that attract attention, build trust,
-      and convert viewers into paying customers.
+<!-- ==================== NAVBAR ==================== -->
+<nav id="navbar" class="">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Akin's <span>Design</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://wa.me/2348165570707" target="_blank" class="nav-login">Contact</a>
+      <a href="https://wa.me/2348165570707" target="_blank" class="nav-signup">Book Now</a>
+    </div>
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#portfolio" class="mobile-link">Portfolio</a>
+    <a href="#reviews" class="mobile-link">Reviews</a>
+    <a href="https://wa.me/2348165570707" target="_blank" class="nav-signup mobile-link">Book Now</a>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section id="hero">
+  <!-- Deep space starfield background -->
+  <canvas id="starfield"></canvas>
+  <div class="hero-outer-glow"></div>
+
+  <!-- Navbar area spacer -->
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot-pulse"></span>
+      <p>Available for Projects</p>
+    </div>
+    <h1 class="hero-h1 font-heading">
+      Elevate Your<br><span class="h1-gradient">Design Experience</span>
+    </h1>
+    <p class="hero-sub">
+      Unlock your brand's full potential in a premium creative environment,<br>powered by Akin's Design.
     </p>
-    <a href="#contact" class="btn">Get Professional Designs</a>
-  </header>
+    <div class="hero-btns">
+      <a href="https://wa.me/2348165570707" target="_blank" class="btn-hero-book">
+        <span class="btn-3d-top">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
+          Book &amp; Create
+        </span>
+        <span class="btn-3d-shadow"></span>
+      </a>
+      <a href="#portfolio" class="btn-hero-view">
+        <span class="btn-view-inner">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          View My Work
+        </span>
+      </a>
+    </div>
+  </div>
 
-  <section>
-    <div class="images">
-      <img src="images/design1.jpg" alt="Fashion image">
-<img src="images/design2.jpg" alt="Fashion image">
-      <img src="images/design3.jpg" alt="Fashion image">
-      <img src="images/design4.jpg" alt="Fashion image">
+  <!-- Floating stat card — bottom left -->
+  <div class="hero-stat-card left">
+    <div class="stat-card-top">
+      <span class="stat-label">Design Services</span>
+      <span class="stat-arrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      </span>
     </div>
-  </section>
+    <div class="stat-card-main">Unparalleled<br>Creative Access</div>
+    <div class="stat-bar-wrap"><div class="stat-bar"></div></div>
+  </div>
 
-  <section class="services">
-    <div class="card">
-      <h3>Logos</h3>
-      <p>Clean, memorable logos that represent your brand perfectly.</p>
+  <!-- Floating stat card — bottom right -->
+  <div class="hero-stat-card right">
+    <div class="stat-card-top">
+      <span class="stat-label">Client Satisfaction</span>
+      <span class="stat-arrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      </span>
     </div>
-    <div class="card">
-      <h3>Flyers & Banners</h3>
-      <p>Promotional designs that grab attention instantly.</p>
-    </div>
-    <div class="card">
-      <h3>Social Media Designs</h3>
-      <p>Scroll-stopping posts that increase engagement and sales.</p>
-    </div>
-    <div class="card">
-      <h3>Brand Identity</h3>
-      <p>Consistent visuals that make your business look premium.</p>
-    </div>
-  </section>
+    <div class="stat-number">98%</div>
+    <div class="stat-bar-wrap"><div class="stat-bar full"></div></div>
+  </div>
 
-  <section class="cta" id="contact">
-    <h2>Ready to Elevate Your Brand?</h2>
-    <p>
-      Stop blending in. Let’s create designs that make customers choose you
-      instantly.
+  <!-- 3D Blob / orb -->
+  <div class="hero-blob-wrap">
+    <div class="hero-blob">
+      <div class="blob-inner"></div>
+      <div class="blob-ring"></div>
+      <div class="blob-ring ring2"></div>
+      <div class="blob-glow"></div>
+    </div>
+  </div>
+
+
+  </div>
+</section>
+
+
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about">
+  <div class="about-inner">
+    <div class="reveal observed visible">
+      <div class="gold-divider">
+        <div class="gold-divider-line"></div>
+        <div class="gold-divider-dot"></div>
+        <div class="gold-divider-line"></div>
+      </div>
+      <!-- CEO Photo -->
+      <div class="about-ceo reveal observed">
+        <div class="ceo-photo-wrap">
+          <div class="ceo-photo-ring ring-outer"></div>
+          <div class="ceo-photo-ring ring-inner"></div>
+          <div class="ceo-avatar">
+            <img src="akin.png" alt="Akin" class="ceo-photo">
+          </div>
+          <div class="ceo-badge">
+            <span>✦</span> Available
+          </div>
+        </div>
+        <h3 class="ceo-name font-heading">Akin</h3>
+        <p class="ceo-title">Founder & Creative Director</p>
+        <p class="ceo-tagline">Akin's Design Studio</p>
+      </div>
+
+      <p class="about-text font-heading">
+        Hi, I'm <em>Akin</em> — I turn ideas into visual experiences that last.
+      </p>
+      <p class="about-sub reveal observed">
+        From bold brand identities to scroll-stopping social content, every pixel is crafted with purpose.
+      </p>
+      <div class="about-stats reveal observed">
+        <div class="about-stat">
+          <span class="about-stat-num">9+</span>
+          <span class="about-stat-label">Design Services</span>
+        </div>
+        <div class="about-stat-divider"></div>
+        <div class="about-stat">
+          <span class="about-stat-num">98%</span>
+          <span class="about-stat-label">Client Satisfaction</span>
+        </div>
+        <div class="about-stat-divider"></div>
+        <div class="about-stat">
+          <span class="about-stat-num">100%</span>
+          <span class="about-stat-label">Original Work</span>
+        </div>
+      </div>
+      <div class="gold-divider" style="margin-top:40px; margin-bottom:0">
+        <div class="gold-divider-line" style="max-width:80px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== SERVICES ==================== -->
+<section id="services">
+  <div class="container">
+    <span class="section-label reveal observed visible">Services</span>
+    <h2 class="section-h2 font-heading reveal observed visible">What I <em>Do</em></h2>
+
+    <div class="services-grid" id="services-grid">
+      <!-- Cards injected by JS -->
+    <div class="service-card reveal observed visible" style="transition-delay: 0ms;">
+      <div class="service-top">
+        <div class="service-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg>
+        </div>
+        <div>
+          <div class="service-name font-heading">Brand Identity Design</div>
+          <div class="service-desc">Build a brand that people remember</div>
+        </div>
+      </div>
+      <div class="service-images">
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="brand.jpg" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div>
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="brand2.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div></div>
+      <a href="https://wa.me/2348165570707?text=Hi%20Akin%2C%20I%27d%20like%20to%20book%20Brand%20Identity%20Design" target="_blank" class="service-btn">
+        <svg style="width:15px;height:15px;fill:currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Book This Service
+      </a></div><div class="service-card reveal observed visible" style="transition-delay: 55ms;">
+      <div class="service-top">
+        <div class="service-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"></path></svg>
+        </div>
+        <div>
+          <div class="service-name font-heading">Social Media Design</div>
+          <div class="service-desc">Scroll-stopping content</div>
+        </div>
+      </div>
+      <div class="service-images">
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="social.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div>
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="social2.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div></div>
+      <a href="https://wa.me/2348165570707?text=Hi%20Akin%2C%20I%27d%20like%20to%20book%20Social%20Media%20Design" target="_blank" class="service-btn">
+        <svg style="width:15px;height:15px;fill:currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Book This Service
+      </a></div><div class="service-card reveal observed" style="transition-delay: 110ms;">
+      <div class="service-top">
+        <div class="service-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg>
+        </div>
+        <div>
+          <div class="service-name font-heading">Logo Design</div>
+          <div class="service-desc">A mark that defines your business</div>
+        </div>
+      </div>
+      <div class="service-images">
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="Logo.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div>
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="logo2.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div></div>
+      <a href="https://wa.me/2348165570707?text=Hi%20Akin%2C%20I%27d%20like%20to%20book%20Logo%20Design" target="_blank" class="service-btn">
+        <svg style="width:15px;height:15px;fill:currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Book This Service
+      </a></div><div class="service-card reveal observed" style="transition-delay: 165ms;">
+      <div class="service-top">
+        <div class="service-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"></path></svg>
+        </div>
+        <div>
+          <div class="service-name font-heading">Book Cover Design</div>
+          <div class="service-desc">Make readers stop and stare</div>
+        </div>
+      </div>
+      <div class="service-images">
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="Book.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div>
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="book2.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div></div>
+      <a href="https://wa.me/2348165570707?text=Hi%20Akin%2C%20I%27d%20like%20to%20book%20Book%20Cover%20Design" target="_blank" class="service-btn">
+        <svg style="width:15px;height:15px;fill:currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Book This Service
+      </a></div><div class="service-card reveal observed" style="transition-delay: 220ms;">
+      <div class="service-top">
+        <div class="service-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path></svg>
+        </div>
+        <div>
+          <div class="service-name font-heading">Letterhead Design</div>
+          <div class="service-desc">Premium document identity</div>
+        </div>
+      </div>
+      <div class="service-images">
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="letter.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div>
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="letter2.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div></div>
+      <a href="https://wa.me/2348165570707?text=Hi%20Akin%2C%20I%27d%20like%20to%20book%20Letterhead%20Design" target="_blank" class="service-btn">
+        <svg style="width:15px;height:15px;fill:currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Book This Service
+      </a></div><div class="service-card reveal observed" style="transition-delay: 275ms;">
+      <div class="service-top">
+        <div class="service-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"></path></svg>
+        </div>
+        <div>
+          <div class="service-name font-heading">ID Card Design</div>
+          <div class="service-desc">Clean, professional identity cards</div>
+        </div>
+      </div>
+      <div class="service-images">
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="id.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div>
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="id2.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div></div>
+      <a href="https://wa.me/2348165570707?text=Hi%20Akin%2C%20I%27d%20like%20to%20book%20ID%20Card%20Design" target="_blank" class="service-btn">
+        <svg style="width:15px;height:15px;fill:currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Book This Service
+      </a></div><div class="service-card reveal observed" style="transition-delay: 330ms;">
+      <div class="service-top">
+        <div class="service-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"></path></svg>
+        </div>
+        <div>
+          <div class="service-name font-heading">Packaging Design</div>
+          <div class="service-desc">Packaging that sells</div>
+        </div>
+      </div>
+      <div class="service-images">
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="packaging.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div>
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="packaging2.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div></div>
+      <a href="https://wa.me/2348165570707?text=Hi%20Akin%2C%20I%27d%20like%20to%20book%20Packaging%20Design" target="_blank" class="service-btn">
+        <svg style="width:15px;height:15px;fill:currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Book This Service
+      </a></div><div class="service-card reveal observed" style="transition-delay: 385ms;">
+      <div class="service-top">
+        <div class="service-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m0 0a48.159 48.159 0 018.5 0m-8.5 0V6.375c0-.621.504-1.125 1.125-1.125h6.75c.621 0 1.125.504 1.125 1.125v2.834"></path></svg>
+        </div>
+        <div>
+          <div class="service-name font-heading">Print Design</div>
+          <div class="service-desc">Flyers, banners, and more</div>
+        </div>
+      </div>
+      <div class="service-images">
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="print.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div>
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="print2.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div></div>
+      <a href="https://wa.me/2348165570707?text=Hi%20Akin%2C%20I%27d%20like%20to%20book%20Print%20Design" target="_blank" class="service-btn">
+        <svg style="width:15px;height:15px;fill:currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Book This Service
+      </a></div><div class="service-card reveal observed" style="transition-delay: 440ms;">
+      <div class="service-top">
+        <div class="service-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"></path></svg>
+        </div>
+        <div>
+          <div class="service-name font-heading">Advertising &amp; Marketing Design</div>
+          <div class="service-desc">Visuals that convert</div>
+        </div>
+      </div>
+      <div class="service-images">
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="Advertising.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div>
+    <div class="img-slot shimmer">
+      <img class="img-slot-img" src="Advertising2.webp" alt="Service preview">
+      <div class="img-slot-grid"></div>
+      <div class="img-slot-inner">
+        <div class="img-slot-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+        </div>
+        <span class="img-slot-label">Your Work Here</span>
+      </div>
+    </div></div>
+      <a href="https://wa.me/2348165570707?text=Hi%20Akin%2C%20I%27d%20like%20to%20book%20Advertising%20%26%20Marketing%20Design" target="_blank" class="service-btn">
+        <svg style="width:15px;height:15px;fill:currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> Book This Service
+      </a></div></div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ==================== REVIEWS ==================== -->
+<section id="reviews">
+  <div class="container" style="margin-bottom:48px">
+    <div class="reviews-badge reveal observed">
+      <svg width="14" height="14" fill="#C9A96E" viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg>
+      <p>Client Reviews</p>
+    </div>
+    <h2 class="section-h2 font-heading reveal observed" style="margin-top:12px">What Clients <em>Say</em></h2>
+    <p class="reveal observed" style="text-align:center;font-size:.85rem;color:rgba(59,31,14,.45);margin-top:-36px;margin-bottom:0">
+      Real words from real clients — every project delivered with care.
     </p>
+  </div>
 
-    <a 
-      class="whatsapp"
-      href="https://wa.me/8165570707"
-      target="_blank">
-      Chat on WhatsApp
-    </a>
-  </section>
+  <div class="reviews-marquee">
+    <div class="marquee-track" id="marquee-track"><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"Akin completely transformed our brand. The new identity is bold, clean, and exactly what we needed to stand out in the market."</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">CO</div>
+        <div>
+          <div class="review-name">Chidi Okafor</div>
+          <div class="review-role">CEO, Okafor Brands</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"The packaging design Akin delivered was beyond stunning. Our product sales increased by 40% after the redesign. Absolutely world-class work."</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">SA</div>
+        <div>
+          <div class="review-name">Sade Adeyemi</div>
+          <div class="review-role">Founder, Sade's Boutique</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"My book cover gets compliments everywhere. People literally stop me to ask who designed it. Akin is a genius with visuals."</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">EN</div>
+        <div>
+          <div class="review-name">Emeka Nwachukwu</div>
+          <div class="review-role">Author &amp; Speaker</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"The social media graphics Akin created gave our page a premium feel overnight. Engagement went through the roof. Highly recommend!"</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">TL</div>
+        <div>
+          <div class="review-name">Temi Lawson</div>
+          <div class="review-role">Marketing Director, LaFame</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"Professional, creative, and fast. Akin nailed my letterhead and business cards on the first attempt. The attention to detail is unmatched."</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">BA</div>
+        <div>
+          <div class="review-name">Bolu Adesanya</div>
+          <div class="review-role">Business Coach</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"Our ID cards and internal print materials look so premium now. Clients always comment on the quality. Thank you Akin!"</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">YB</div>
+        <div>
+          <div class="review-name">Yetunde Bello</div>
+          <div class="review-role">HR Manager, TechNova</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"The flyers and banners Akin designed for my events are always the talk of the town. People think I spent a fortune. Worth every kobo!"</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">KI</div>
+        <div>
+          <div class="review-name">Kunle Ibrahim</div>
+          <div class="review-role">Event Promoter</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"Our product packaging went from forgettable to unforgettable. Akin understood the luxury feel we wanted and nailed it perfectly."</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">NO</div>
+        <div>
+          <div class="review-name">Nkem Obi</div>
+          <div class="review-role">Skincare Brand Founder</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"Akin completely transformed our brand. The new identity is bold, clean, and exactly what we needed to stand out in the market."</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">CO</div>
+        <div>
+          <div class="review-name">Chidi Okafor</div>
+          <div class="review-role">CEO, Okafor Brands</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"The packaging design Akin delivered was beyond stunning. Our product sales increased by 40% after the redesign. Absolutely world-class work."</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">SA</div>
+        <div>
+          <div class="review-name">Sade Adeyemi</div>
+          <div class="review-role">Founder, Sade's Boutique</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"My book cover gets compliments everywhere. People literally stop me to ask who designed it. Akin is a genius with visuals."</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">EN</div>
+        <div>
+          <div class="review-name">Emeka Nwachukwu</div>
+          <div class="review-role">Author &amp; Speaker</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"The social media graphics Akin created gave our page a premium feel overnight. Engagement went through the roof. Highly recommend!"</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">TL</div>
+        <div>
+          <div class="review-name">Temi Lawson</div>
+          <div class="review-role">Marketing Director, LaFame</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"Professional, creative, and fast. Akin nailed my letterhead and business cards on the first attempt. The attention to detail is unmatched."</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">BA</div>
+        <div>
+          <div class="review-name">Bolu Adesanya</div>
+          <div class="review-role">Business Coach</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"Our ID cards and internal print materials look so premium now. Clients always comment on the quality. Thank you Akin!"</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">YB</div>
+        <div>
+          <div class="review-name">Yetunde Bello</div>
+          <div class="review-role">HR Manager, TechNova</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"The flyers and banners Akin designed for my events are always the talk of the town. People think I spent a fortune. Worth every kobo!"</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">KI</div>
+        <div>
+          <div class="review-name">Kunle Ibrahim</div>
+          <div class="review-role">Event Promoter</div>
+        </div>
+      </div>
+    </div><div class="review-card">
+      <div class="review-stars"><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg><svg viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path></svg></div>
+      <p class="review-text font-heading">"Our product packaging went from forgettable to unforgettable. Akin understood the luxury feel we wanted and nailed it perfectly."</p>
+      <div class="review-author">
+        <div class="review-avatar font-heading">NO</div>
+        <div>
+          <div class="review-name">Nkem Obi</div>
+          <div class="review-role">Skincare Brand Founder</div>
+        </div>
+      </div>
+    </div></div>
+  </div>
+</section>
 
-  <footer>
-    © 2026 Premium Graphic Design. All rights reserved.
-  </footer>
 
-</body>
-</html>
+<!-- ==================== FOOTER ==================== -->
+<footer id="contact">
+  <!-- CTA banner -->
+  <div class="footer-cta-wrap">
+    <div class="footer-cta">
+      <div class="footer-cta-bg"></div>
+      <div class="footer-cta-overlay"></div>
+      <div class="footer-cta-content reveal observed">
+        <h2 class="font-heading">Ready to Create Something <em>Great?</em></h2>
+        <p>Send a WhatsApp message and let's bring your vision to life.</p>
+        <a href="https://wa.me/2348165570707" target="_blank" class="btn-gold pulse-glow" style="display:inline-flex">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+          Start a Conversation
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer card -->
+  <div class="footer-card-wrap">
+    <div class="footer-card">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div>
+          <div class="footer-brand-name font-heading">Akin's <span>Design</span></div>
+          <p class="footer-brand-desc">
+            Akin's Design crafts premium visual identities — making brands memorable and ideas unforgettable.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="Instagram">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
+            </a>
+            <a href="#" class="footer-social" aria-label="Twitter/X">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+            </a>
+            <a href="https://wa.me/2348165570707" target="_blank" class="footer-social" aria-label="WhatsApp">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Services -->
+        <div>
+          <div class="footer-col-title">Services</div>
+          <div class="footer-col-links">
+            <a href="#services">Brand Identity</a>
+            <a href="#services">Logo Design</a>
+            <a href="#services">Social Media</a>
+            <a href="#services">Book Covers</a>
+          </div>
+        </div>
+        <!-- More -->
+        <div>
+          <div class="footer-col-title">More</div>
+          <div class="footer-col-links">
+            <a href="#services">Letterhead</a>
+            <a href="#services">ID Cards</a>
+            <a href="#services">Packaging</a>
+            <a href="#services">Print Design</a>
+          </div>
+        </div>
+        <!-- Studio -->
+        <div>
+          <div class="footer-col-title">Studio</div>
+          <div class="footer-col-links">
+            <a href="#about">About Akin</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#reviews">Reviews</a>
+            <a href="https://wa.me/2348165570707" target="_blank">Contact</a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Akin's Design. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="https://wa.me/2348165570707" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Watermark -->
+  <div class="footer-watermark">
+    <p class="font-heading">Akin's Design</p>
+  </div>
+</footer>
+
+
+<!-- ==================== JAVASCRIPT ==================== -->
+
+
+
+
+
+<script>
+// ============ NAVBAR SCROLL ============
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// ============ HAMBURGER MENU ============
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+document.querySelectorAll('.mobile-link').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  });
+});
+
+// ============ SCROLL REVEAL ============
+const revealEls = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+revealEls.forEach(el => revealObserver.observe(el));
+
+// ============ COUNT-UP ANIMATION for about stats ============
+function countUp(el, target, suffix, duration) {
+  const isFloat = target % 1 !== 0;
+  let start = 0;
+  const step = target / (duration / 16);
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) { start = target; clearInterval(timer); }
+    el.textContent = (isFloat ? start.toFixed(1) : Math.floor(start)) + suffix;
+  }, 16);
+}
+const statsSection = document.querySelector('.about-stats');
+if (statsSection) {
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const nums = entry.target.querySelectorAll('.about-stat-num');
+        nums.forEach(el => {
+          const text = el.textContent;
+          const num = parseFloat(text);
+          const suffix = text.replace(num, '');
+          el.textContent = '0' + suffix;
+          countUp(el, num, suffix, 1200);
+        });
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  statsObserver.observe(statsSection);
+}
+
+// ============ MARQUEE REVIEWS (auto-scroll) ============
+const marqueeTrack = document.querySelector('.marquee-track') || document.querySelector('.reviews-marquee-track');
+if (marqueeTrack) {
+  marqueeTrack.style.display = 'flex';
+  marqueeTrack.style.willChange = 'transform';
+  const cards = Array.from(marqueeTrack.querySelectorAll('.review-card'));
+  cards.forEach(card => {
+    const clone = card.cloneNode(true);
+    marqueeTrack.appendChild(clone);
+  });
+  let scrollPos = 0;
+  let paused = false;
+  marqueeTrack.addEventListener('mouseenter', () => paused = true);
+  marqueeTrack.addEventListener('mouseleave', () => paused = false);
+  function tickMarquee() {
+    if (!paused) {
+      scrollPos += 0.4;
+      const half = marqueeTrack.scrollWidth / 2;
+      if (scrollPos >= half) scrollPos = 0;
+      marqueeTrack.style.transform = `translateX(-${scrollPos}px)`;
+    }
+    requestAnimationFrame(tickMarquee);
+  }
+  tickMarquee();
+}
+
+// ============ SMOOTH SCROLL ============
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+
+
+<script>
+// ============ STARFIELD ============
+(function(){
+  const canvas = document.getElementById('starfield');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let W, H, stars = [];
+  function resize(){
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  function initStars(){
+    stars = [];
+    for(let i=0;i<180;i++){
+      stars.push({
+        x: Math.random()*W, y: Math.random()*H,
+        r: Math.random()*1.2+0.2,
+        alpha: Math.random()*0.6+0.1,
+        speed: Math.random()*0.015+0.003,
+        twinkle: Math.random()*Math.PI*2
+      });
+    }
+  }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    stars.forEach(s=>{
+      s.twinkle += s.speed;
+      const a = s.alpha * (0.5 + 0.5*Math.sin(s.twinkle));
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(255,255,255,${a})`;
+      ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  resize(); initStars(); draw();
+  window.addEventListener('resize', ()=>{ resize(); initStars(); });
+})();
+</script>
+
+</body></html>
